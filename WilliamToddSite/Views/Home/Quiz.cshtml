@@ -1,0 +1,25 @@
+﻿@model QuizModel;
+@{
+    ViewData["Title"] = "Quiz";
+}
+<div class="jumbotron">
+    <h1 class="display-4">The Quiz</h1>
+</div>
+
+<div class="container m-5">
+        <div class="row p-10 my-10 bg-dark text-white">
+            <p class="col pr-5">Question: @ViewBag.QuestionText @ViewBag.Result</p>
+        </div>
+</div>
+
+<hr />
+
+<form asp-action="Quiz" method="post">
+    <input type="hidden" asp-for="rScore" value="@ViewBag.rScore" />
+    <input type="hidden" asp-for="qid" value="@ViewBag.qid" />
+
+    <input type="radio" asp-for="Answer" value="A" /> @ViewBag.AnswerAText<br />
+    <input type="radio" asp-for="Answer" value="B" /> @ViewBag.AnswerBText<br />
+
+    <button type="submit">Submit</button>
+</form>

@@ -1,0 +1,44 @@
+@model List<ForumModel>
+@{
+    ViewBag.Title = "Forum";
+}
+<div class="jumbotron">
+    <h1 class="display-4">Forum on Hamburgers</h1>
+    <p>This is a Forum on Hamburgers.</p>
+</div>
+
+
+<div class="container m-5">
+    <a asp-controller="Home" asp-action="Insert">Add New Comment</a><br />
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr class="row p-10 my-10 bg-dark text-white">
+                <th class="col pr-5">Page</th>
+
+                <th class="col pr-5">Rating</th>
+
+                <th class="col pr-5">Text</th>
+
+                <th class="col pr-5">Name</th>
+
+                <th class="col pr-5">Date</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            @foreach (var forum in ViewBag.Forum)
+            {
+                <tr class="row p-10 my-10">
+                    <td class="col pr-5">@forum.Page</td>
+                    <td class="col pr-8">@forum.Rating</td>
+                    <td class="col pr-5">@forum.Text</td>
+                    <td class="col pr-8">@forum.Name</td>
+                    <td class="col pr-5">@forum.Date</td>
+                    <td><a asp-controller="Home" asp-action="Update" asp-route-id="@forum.CommentId">Edit</a></td>
+                    <td><a asp-controller="Home" asp-action="Delete" asp-route-id="@forum.CommentId">Delete</a></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+<hr />
