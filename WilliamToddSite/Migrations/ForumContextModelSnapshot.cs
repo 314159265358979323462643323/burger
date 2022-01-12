@@ -35,7 +35,8 @@ namespace WilliamToddSite.Migrations
 
                     b.Property<string>("Page")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(30)
+                        .HasColumnType("nvarchar(30)");
 
                     b.Property<int?>("Rating")
                         .IsRequired()
@@ -57,7 +58,7 @@ namespace WilliamToddSite.Migrations
                             Name = "William Todd",
                             Page = "Home",
                             Rating = 5,
-                            Text = "this is a sample comment"
+                            Text = "this is asample comment"
                         });
                 });
 #pragma warning restore 612, 618

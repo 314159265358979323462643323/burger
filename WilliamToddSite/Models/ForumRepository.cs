@@ -9,7 +9,7 @@ namespace WilliamToddSite.Models
 {
     public class ForumRepository : IForumRepository
     {
-        private ForumContext db = null;
+        private ForumContext db;
 /*
         public ForumRepository()
         {
@@ -34,23 +34,26 @@ namespace WilliamToddSite.Models
         {
             ForumModel existing = db.Forum.Find(id);
             db.Forum.Remove(existing);
+            db.SaveChanges();
         }
 
         public void Insert(ForumModel obj)
         {
             db.Forum.Add(obj);
+            db.SaveChanges();
         }
         public void Update(ForumModel obj)
         {
             db.Entry(obj).State = EntityState.Modified;
+            db.SaveChanges();
         }
-
+        /*
         public void Save()
         {
             db.SaveChanges();
         }
 
-        
+        */
 
         
     }

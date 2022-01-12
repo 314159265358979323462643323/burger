@@ -13,6 +13,7 @@ namespace WilliamToddSite.Models
 
 
         [Required(ErrorMessage = "Please enter a page title.")]
+        [StringLength(30)]
         public string Page { get; set; }
 
         [Required(ErrorMessage = "Please enter a rating.")]

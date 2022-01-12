@@ -89,12 +89,22 @@ namespace WilliamToddSite.Controllers
         }
 
         [HttpGet]
+        public IActionResult Insert()
+        {
+            return View("Edit");
+        }
+
+        [HttpPost]
         public IActionResult Insert(ForumModel obj)
         {
-            repository.Insert(obj);
-            repository.Save();
-            return View();
+            if(ModelState.IsValid)
+            { 
+                repository.Insert(obj);
+                return RedirectToAction("Forum");
+            }
+            return View("Edit");
         }
+
         /*
         [HttpPost]
         public IActionResult Forum(ForumModel model)
@@ -121,15 +131,26 @@ namespace WilliamToddSite.Controllers
             ForumModel existing = repository.SelectByID(id);
             return View(existing);
         }
-
+        
         [HttpPost]
-        public IActionResult Update(ForumModel obj)
+        public IActionResult Edit(ForumModel obj)
         {
-            repository.Update(obj);
-            repository.Save();
+            if(ModelState.IsValid)
+            { 
+                repository.Update(obj);
+                return RedirectToAction("Forum");
+            }
             return View();
         }
-
+        /*
+        [HttpPost]
+        public IActionResult Update()
+        {
+            repository.Update(obj);
+            
+            return View();
+        }
+        */
         [HttpGet]
         public IActionResult ConfirmDelete(int id)
         {
@@ -141,7 +162,7 @@ namespace WilliamToddSite.Controllers
         public IActionResult Delete(int id)
         {
             repository.Delete(id);
-            repository.Save();
+            
             return View();
         }
 

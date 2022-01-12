@@ -12,6 +12,6 @@ namespace WilliamToddSite.Models
         void Insert(ForumModel obj);
         void Update(ForumModel obj);
         void Delete(int id);
-        void Save();
+      
     }
 }

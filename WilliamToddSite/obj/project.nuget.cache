@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "XpZD8VyCJs5auAgs6tiN6d59k5x/1I+0acxJ3BpeZg61AqKZ5Kg5mw74ismjU4Adhx42OgH2WS+PPDDFQcaTKw==",
+  "dgSpecHash": "/sWVcxmkJQO7lz7HpA5u2VI4qZdkeYjfkOeXNNegyXbGI/tEIGrVyhX/g7V7br8wkpjWtlsqldCNCGIHcpfoUg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\William\\Desktop\\Web_Repository\\Web-Dev-project\\WilliamToddSite\\WilliamToddSite.csproj",
+  "projectFilePath": "C:\\Coding projects\\.NET 2\\burger\\WilliamToddSite\\WilliamToddSite.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\William\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\William\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
