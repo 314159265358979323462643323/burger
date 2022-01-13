@@ -34,7 +34,7 @@
                     <td class="col pr-5">@forum.Text</td>
                     <td class="col pr-8">@forum.Name</td>
                     <td class="col pr-5">@forum.Date</td>
-                    <td><a asp-controller="Home" asp-action="Update" asp-route-id="@forum.CommentId">Edit</a></td>
+                    <td><a asp-controller="Home" asp-action="Edit" asp-route-id="@forum.CommentId">Edit</a></td>
                     <td><a asp-controller="Home" asp-action="Delete" asp-route-id="@forum.CommentId">Delete</a></td>
                 </tr>
             }

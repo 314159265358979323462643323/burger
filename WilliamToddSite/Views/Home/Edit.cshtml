@@ -6,31 +6,35 @@
 
 <h2>@ViewBag.Title</h2>
 
-<form asp-action="Edit" method="post">
+<form method="post">
     <div asp-validation-summary="All" class="text-danger"></div>
 
     <input type="hidden" asp-for="CommentId" />
 
     <div class="form-group">
         <label asp-for="Page">Page: </label>
+        <span asp-validation-for="Page"></span>
         <input asp-for="Page" class="form-control" />
     </div>
 
     <div class="form-group">
         <label asp-for="Rating">Rating: </label>
+        <span asp-validation-for="Rating"></span>
         <input asp-for="Rating" class="form-control" />
     </div>
 
     <div class="form-group">
         <label asp-for="Text">Text: </label>
+        <span asp-validation-for="Text"></span>
         <input asp-for="Text" class="form-control" />
     </div>
 
     <div class="form-group">
         <label asp-for="Name">Name: </label>
+        <span asp-validation-for="Name"></span>
         <input asp-for="Name" class="form-control" />
     </div>
 
-    <button type="submit" class="btn btn-primary">@ViewBag.action</button>
+    <button type="submit" class="btn btn-primary"></button>
     <a asp-controller="Home" asp-action="Forum" class="btn btn-primary">Cancel</a>
 </form>

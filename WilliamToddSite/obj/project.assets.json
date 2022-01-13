@@ -5802,11 +5802,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\William\\Desktop\\Web_Repository\\Web-Dev-project\\WilliamToddSite\\WilliamToddSite.csproj",
+      "projectUniqueName": "C:\\Coding projects\\.NET 2\\burger\\WilliamToddSite\\WilliamToddSite.csproj",
       "projectName": "WilliamToddSite",
-      "projectPath": "C:\\Users\\William\\Desktop\\Web_Repository\\Web-Dev-project\\WilliamToddSite\\WilliamToddSite.csproj",
+      "projectPath": "C:\\Coding projects\\.NET 2\\burger\\WilliamToddSite\\WilliamToddSite.csproj",
       "packagesPath": "C:\\Users\\William\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\William\\Desktop\\Web_Repository\\Web-Dev-project\\WilliamToddSite\\obj\\",
+      "outputPath": "C:\\Coding projects\\.NET 2\\burger\\WilliamToddSite\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\William\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5864,7 +5864,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
       }
     }
   }
