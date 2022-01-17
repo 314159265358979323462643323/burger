@@ -8,40 +8,37 @@ using WilliamToddSite.Models;
 
 namespace QuizTests
 {
-    public class TestRepository<T> : ITestRepository<T> where T:class
+    public class TestRepository : IForumRepository
     {
-        private List<T> data = new List<T>();
+        private List<ForumModel> data = new List<ForumModel>();
 
-        public IEnumerable<T> SelectAll()
+        IEnumerable<ForumModel> IForumRepository.SelectAll()
         {
             return data;
         }
-        public T SelectByID(object id)
+
+        public ForumModel SelectByID(int id)
         {
-            return data.FirstOrDefault();     
+            var comment = data.Find(c => c.CommentId == id);
+            return comment;
         }
-        public void Insert(T obj)
+
+        public void Insert(ForumModel obj)
         {
+            obj.CommentId = data.Count;
             data.Add(obj);
         }
-        public void Update(T obj)
+
+        public void Update(ForumModel obj)
         {
-            T existing = data.FirstOrDefault();
+            ForumModel existing = data.FirstOrDefault();
             existing = obj;
         }
-        public void Delete(object id)
+
+        public void Delete(int id)
         {
-            data.RemoveAt(0);
+            data.RemoveAt(id);
+            
         }
-        public void Save()
-        {
-         
-        }
-
-        
-
-        
-
-        
     }
 }

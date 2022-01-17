@@ -29,7 +29,7 @@ namespace QuizTests
         [Fact]
         public void IndexTest()
         {
-            TestRepository<ForumModel> repository = new TestRepository<ForumModel>();
+            TestRepository repository = new TestRepository();
             HomeController controller = new HomeController((IForumRepository)repository);
             var result = (ViewResult)controller.Index();
             List<ForumModel> data = (List<ForumModel>)result.ViewData.Model;
@@ -39,7 +39,7 @@ namespace QuizTests
         [Fact]
         public void InsertTest()
         {
-            TestRepository<ForumModel> repository = new TestRepository<ForumModel>();
+            TestRepository repository = new TestRepository();
             HomeController controller = new HomeController((IForumRepository)repository);
             var result = (ViewResult)controller.Index();
             List<ForumModel> data = (List<ForumModel>)result.ViewData.Model;

@@ -2,16 +2,16 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using WilliamToddSite.Models;
 
 namespace QuizTests
 {
-    public interface ITestRepository<T> where T:class
+    public interface ITestRepository
     {
-        IEnumerable<T> SelectAll();
-        T SelectByID(object id);
-        void Insert(T obj);
-        void Update(T obj);
-        void Delete(object id);
-        void Save();
+        IEnumerable<ForumModel> SelectAll();
+        ForumModel SelectByID(int id);
+        void Insert(ForumModel obj);
+        void Update(ForumModel obj);
+        void Delete(int id);
     }
 }

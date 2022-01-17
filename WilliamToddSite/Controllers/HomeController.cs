@@ -162,8 +162,8 @@ namespace WilliamToddSite.Controllers
         public IActionResult Delete(int id)
         {
             repository.Delete(id);
-            
-            return View();
+
+            return RedirectToAction("Forum");
         }
 
         public IActionResult Privacy()

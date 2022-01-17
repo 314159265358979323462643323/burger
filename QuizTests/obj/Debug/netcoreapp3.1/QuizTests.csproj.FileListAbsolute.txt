@@ -290,7 +290,6 @@ C:\Coding projects\.NET 2\burger\QuizTests\obj\Debug\netcoreapp3.1\QuizTests.Gen
 C:\Coding projects\.NET 2\burger\QuizTests\obj\Debug\netcoreapp3.1\QuizTests.AssemblyInfoInputs.cache
 C:\Coding projects\.NET 2\burger\QuizTests\obj\Debug\netcoreapp3.1\QuizTests.AssemblyInfo.cs
 C:\Coding projects\.NET 2\burger\QuizTests\obj\Debug\netcoreapp3.1\QuizTests.csproj.CoreCompileInputs.cache
-C:\Coding projects\.NET 2\burger\QuizTests\obj\Debug\netcoreapp3.1\QuizTests.csproj.CopyComplete
 C:\Coding projects\.NET 2\burger\QuizTests\obj\Debug\netcoreapp3.1\QuizTests.dll
 C:\Coding projects\.NET 2\burger\QuizTests\obj\Debug\netcoreapp3.1\QuizTests.pdb
 C:\Coding projects\.NET 2\burger\QuizTests\obj\Debug\netcoreapp3.1\QuizTests.genruntimeconfig.cache
